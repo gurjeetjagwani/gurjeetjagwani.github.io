@@ -1,19 +1,191 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurjeet Jagwani</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            background: #f7fafc;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        header {
+            margin-bottom: 2.5rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #718096;
+            font-size: 1.1rem;
+        }
+
+        .subtitle a {
+            color: #4a5568;
+            text-decoration: none;
+            border-bottom: 1px solid #cbd5e0;
+        }
+
+        .subtitle a:hover {
+            color: #2b6cb0;
+            border-color: #2b6cb0;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #a0aec0;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+
+        a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .interests {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .interest-row {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .interest-label {
+            font-weight: 500;
+            color: #2d3748;
+            min-width: 70px;
+        }
+
+        .interest-items {
+            color: #4a5568;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+        }
+
+        .links a {
+            color: #4a5568;
+            font-size: 0.95rem;
+            transition: color 0.15s;
+        }
+
+        .links a:hover {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 2rem 1.25rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .interest-row {
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+
+            .interest-label {
+                min-width: auto;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <header>
             <h1>Gurjeet Jagwani</h1>
-            <p> Hello! I am Gurjeet, I am a Machine Learning Research Software Engineer at the University of Cambridge and I mainly work with <a href="https://www.ast.cam.ac.uk/people/hiranya.peiris">Prof. Hiranya Peiris</a> on applying machine learning to problems within astrophysics and cosmology.
-                My other responsibilities within this role include, supporting other professors and students around the <a href="https://www.ast.cam.ac.uk/"> IoA </a> with software or machine learning issues. Previously, I was at the University of Oxford, working for the <a href="https://www.skao.int/en">SKA</a> and on the <a href="https://spotlight.ncra.tifr.res.in/">SPOTLIGHT</a> project, with a focus on scientifc and high performance computing for radio astronomy.
+            <p class="subtitle">ML Research Engineer · <a href="https://www.ast.cam.ac.uk/">Institute of Astronomy</a>, Cambridge</p>
+        </header>
+
+        <section>
+            <h2>About</h2>
+            <p>
+                I work with <a href="https://www.ast.cam.ac.uk/people/hiranya.peiris">Prof. Hiranya Peiris</a> on applying machine learning to problems in astrophysics and cosmology, split between the <a href="https://www.ast.cam.ac.uk/">IoA</a> and the <a href="https://zettascale.hpc.cam.ac.uk/">Zettascale Lab</a>. I'm also involved with <a href="https://astroautomata.com/">Miles Cranmer</a> and the <a href="https://polymathic-ai.org/">Polymathic AI</a> collaboration on a part-time basis.
             </p>
-            
-            <ul>
-                <li><a href="https://orcid.org/0009-0004-7935-2785">ORCID</a></li>
-                <li><a href="https://www.linkedin.com/in/gurjeet-jagwani-674435bb">Linkedin</a></li>
-                <li><a href="https://wandb.ai/gurjeetjagwani4">Wandb</a></li>
-                <li><a href="https://github.com/gurjeetjagwani">Github</a></li>
-                <li><a href="mailto:gurjeet.jagwani@ast.cam.ac.uk">Email</a></li>
-            </ul>
+            <p>
+                Part of my role involves providing HPC and RSE training to incoming students at the IoA.
+            </p>
+            <p>
+                Previously, I was at the University of Oxford, working for the <a href="https://www.skao.int/en">SKA Observatory</a> and on the <a href="https://spotlight.ncra.tifr.res.in/">SPOTLIGHT</a> project, focusing on scientific and high-performance computing for radio astronomy.
+            </p>
+        </section>
+
+        <section>
+            <h2>Interests</h2>
+            <div class="interests">
+                <div class="interest-row">
+                    <span class="interest-label">CS/ML</span>
+                    <span class="interest-items">Probabilistic ML · High Performance Computing · Energy Efficient Models</span>
+                </div>
+                <div class="interest-row">
+                    <span class="interest-label">Astro</span>
+                    <span class="interest-items">Galaxy-Halo Connection · Baryonic Feedback · Field-level Inference</span>
+                </div>
+                <div class="interest-row">
+                    <span class="interest-label">Other</span>
+                    <span class="interest-items">Bayesian Statistics · ML-driven Scientific Discovery</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Links</h2>
+            <div class="links">
+                <a href="mailto:gurjeet.jagwani@ast.cam.ac.uk">Email</a>
+                <a href="https://github.com/gurjeetjagwani">GitHub</a>
+                <a href="https://scholar.google.com/citations?user=HwVIyRUAAAAJ">Scholar</a>
+                <a href="https://www.linkedin.com/in/gurjeet-jagwani-674435bb">LinkedIn</a>
+                <a href="https://orcid.org/0009-0004-7935-2785">ORCID</a>
+                <a href="https://wandb.ai/gurjeetjagwani4">W&B</a>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
